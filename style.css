@@ -1,0 +1,73 @@
+body {
+  background: #000;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.side-menu-container {
+  height: 100%;
+  width: 15px;
+  transition: 0.5s;
+  background: #f12711;
+  background: linear-gradient(to top, #f5af19, #f12711);
+  position: fixed;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+.side-menu-container:hover {
+  width: 50px;
+  transition: 0.5s;
+}
+.side-menu-container .side-menu-links {
+  margin-top: 50px;
+  padding: 20px 20px 20px 50px;
+}
+.side-menu-container .side-menu-links a {
+  text-decoration: none;
+  color: white;
+}
+.side-menu-container .side-menu-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+div.side-menu-open {
+  transform: rotate(-90deg);
+  position: absolute;
+  width: 50px;
+  top: 30px;
+  left: 0;
+}
+div.side-menu-open:after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: white;
+  margin-left: 20px;
+  transition: 0.3s;
+}
+div.side-menu-open:hover::after {
+  transition: 0.3s;
+  margin-left: 0;
+}
+
+.side-menu-close {
+  position: absolute;
+  width: 25px;
+  top: 15px;
+  right: 15px;
+  height: 25px;
+  color: white;
+  display: none;
+  transition: 0.5s;
+}
+.side-menu-close:hover {
+  transform: rotate(90deg);
+  transition: 0.5s;
+}
+
+/*# sourceMappingURL=style.css.map */
